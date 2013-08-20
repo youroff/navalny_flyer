@@ -7,7 +7,7 @@ config = {
     :Producer => "Teamnavalny",
     :CreationDate => Time.now,
   },
-  force_download: true
+  force_download: @if_download
 }
 
 data = {

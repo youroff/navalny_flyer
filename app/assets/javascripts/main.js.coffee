@@ -39,5 +39,10 @@ $ ->
     ($ '#panel button').prop('disabled', true)
     
   ($ '#download').on 'click', (e) ->
-    ($ '#form form').trigger 'submit'   
+    ($ '#if_download').val("1")
+    ($ '#form form').trigger 'submit'
+
+  ($ '#print').on 'click', (e) ->
+    ($ '#if_download').val("0")
+    ($ '#form form').trigger 'submit'  
   

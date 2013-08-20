@@ -17,6 +17,12 @@
   @include transition-duration(0.3s);
 }
 
+@-moz-document url-prefix() { 
+  .blurry {
+    opacity: 0.2;
+  }
+}
+
 input {
   @include transition-duration(0.3s);
 }

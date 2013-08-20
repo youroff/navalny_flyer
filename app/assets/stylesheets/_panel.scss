@@ -2,8 +2,12 @@
 
 #panel {
   @include transition-duration(0.3s);
-  padding: 20px;
-  width: 660px;
+  padding: 20px 0px;
+  width: 792px;
   margin: auto;
-  text-align: center;
+  text-align: left;
+  
+  #print {
+    margin-right: 10px;
+  }
 }

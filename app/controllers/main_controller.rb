@@ -19,17 +19,7 @@ class MainController < ActionController::Base
   def flyer
     @person = params[:person]
     @fields = FIELDS
-    # @person = {
-    #    name: "Вася Пупкин",
-    #    address: "Тверская, 13",
-    #    phone: "525-2343",
-    #    twitter: "vasily.pupkin",
-    #    facebook: "vasily.pupkin",
-    #    odnoklassniki: "vasily.pupkin",
-    #    livejournal: "vasily.pupkin"
-    #    
-    #  }
-    redirect_to action: :index unless @person[:name]
-    
+    @if_download = params[:download] == "1"
+    redirect_to action: :index unless @person[:name]   
   end
 end

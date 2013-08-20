@@ -1,13 +1,14 @@
 #panel.blurry
-  %button#edit.btn-large.btn{disabled: "disabled"}
+  %button#edit.btn{disabled: "disabled"}
     %i.icon-edit
     Изменить данные
-  / %button#print.btn-large.btn{disabled: "disabled", onclick: "window.print();"}
-  /   %i.icon-print
-  /   Печатать
-  %button#download.btn-large.btn{disabled: "disabled"}
+  %button#download.pull-right.btn-large.btn.btn-info{disabled: "disabled"}
     %i.icon-download
     Скачать в PDF
+  %button#print.pull-right.btn-large.btn.btn-info{disabled: "disabled"}
+    %i.icon-print
+    Печатать
+
 = render 'form'
 = render 'flyer'
     

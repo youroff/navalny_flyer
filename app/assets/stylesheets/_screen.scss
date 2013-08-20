@@ -1,0 +1,72 @@
+@import 'compass/css3/box-shadow';
+@import 'compass/css3/transition';
+@import 'vars';
+
+#flyer {
+  @include transition-duration(0.3s);
+  @include single-box-shadow;
+  padding: 25px 65px;
+  border: 1px solid $c-grey;
+  width: 660px;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 100px;
+
+  .logo {
+    height: 40px;
+    margin-bottom: 13px;
+    background: url('/images/logo.jpg') 100% 0% no-repeat;
+  }
+  
+  .splash {
+    height: 229px;
+    background: url('/images/splash.jpg') 0% 0% no-repeat;  
+  }
+  
+  .text {
+    & > p {
+      font-family: Georgia, serif;
+      font-size: 16px;
+    }
+    .green {
+      padding: 25px 0px 15px 0px;
+      text-align: center;
+      p {
+        color: $c-green;
+        font-size: 24px;
+        font-weight: bold;      
+      }
+    }    
+  }
+  
+  .footer {
+    background: url('/images/circle.jpg') 100% 0% no-repeat;
+    height: 215px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    padding-top: 3px;
+    
+    .contacts {
+      padding: 10px;
+      width: 380px;
+      border: 3px solid $c-green;
+      
+      & > p {
+        font-family: Georgia, serif;
+        font-size: 16px;
+      }
+      
+      #placeholder_contacts {
+        line-height: 12px;
+        
+        span {
+          color: $c-green;
+          font-weight: bold;
+        }
+      }
+    }
+  }
+
+  
+  
+}

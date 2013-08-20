@@ -1,0 +1,22 @@
+@import 'compass/css3';
+/*@import 'compass/reset';*/
+
+@import 'panel';
+@import 'form';
+
+@media screen {
+  @import 'screen';
+}
+
+@media print {
+  @import 'print';
+}
+
+.blurry {
+  @include filter(blur(10px));
+  @include transition-duration(0.3s);
+}
+
+input {
+  @include transition-duration(0.3s);
+}

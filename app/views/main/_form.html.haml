@@ -1,0 +1,39 @@
+#form
+  %h3 Расскажите о себе
+  %p Заполните те поля, которые хотите включить в листовку:
+  %br
+  = form_for :person, url: '/flyer.pdf', html: { class: 'form-horizontal' } do |f|
+    .control-group
+      %label.control-label{for: "person_name"} Имя
+      .controls
+        = f.text_field :name
+    .control-group
+      %label.control-label{for: "person_address"} Адрес
+      .controls
+        = f.text_field :address
+    .control-group
+      %label.control-label{for: "person_phone"} Телефон
+      .controls
+        = f.text_field :phone
+    .control-group
+      %label.control-label{for: "person_facebook"} Facebook
+      .controls
+        = f.text_field :facebook
+    .control-group
+      %label.control-label{for: "person_vkontakte"} Вконтакте
+      .controls
+        = f.text_field :vkontakte
+    .control-group
+      %label.control-label{for: "person_odnoklassniki"} Одноклассники
+      .controls
+        = f.text_field :odnoklassniki
+    .control-group
+      %label.control-label{for: "person_twitter"} Twitter
+      .controls
+        = f.text_field :twitter
+    .control-group
+      %label.control-label{for: "person_livejournal"} ЖЖ
+      .controls
+        = f.text_field :livejournal
+    .controls
+      = f.submit "Сгенерировать листовку", class: 'btn btn-big'

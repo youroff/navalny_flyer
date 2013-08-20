@@ -1,0 +1,9 @@
+@import 'compass/css3/transition';
+
+#panel {
+  @include transition-duration(0.3s);
+  padding: 20px;
+  width: 660px;
+  margin: auto;
+  text-align: center;
+}

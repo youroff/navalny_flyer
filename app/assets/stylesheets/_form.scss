@@ -2,6 +2,9 @@
 @import 'compass/css3/box-shadow';
 
 #form {
+  h3 {
+    line-height: 27px;
+  }
   z-index: 100;
   background: transparentize($c-grey, 0.3);
   border-bottom: 2px solid darken($c-grey, 10);
@@ -11,7 +14,7 @@
   @include single-box-shadow;
   padding: 20px 40px;
   width: 540px;
-  position: fixed;
+  position: absolute;
   top: 50px;
   left: 50%;
   margin-left: -310px;

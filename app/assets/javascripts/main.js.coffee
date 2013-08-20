@@ -9,9 +9,9 @@ render = (form_data) ->
     if ($ '#placeholder_contacts p').length < 6
       ($ '#placeholder_contacts').append("<p>#{fields[field_name]}:&nbsp;&nbsp;&nbsp;<span>#{field_value}</span></p>") 
 
-add_error = (field_container, message) ->
+add_error = (field_container) ->
   ($ field_container).addClass 'error'
-  ($ field_container).find('.controls').append("<span class='help-inline'>#{message}</span>")
+  ($ field_container).find('.controls').append('<span class="help-inline">Обязательное поле</span>')
 
 remove_errors = () ->
   ($ '.control-group').removeClass('error')
@@ -31,7 +31,8 @@ $ ->
         ($ '#panel button').prop('disabled', false)
         render(form_data)
       else
-        add_error ($ '.control-group').first(), 'Обязательное поле'
+        remove_errors()
+        add_error ($ '.control-group').first()
   
   ($ '#edit').on 'click', (e) ->
     ($ '#form').fadeIn()

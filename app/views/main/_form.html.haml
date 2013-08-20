@@ -1,6 +1,5 @@
 #form
-  %h3 Расскажите о себе
-  %p Заполните те поля, которые хотите включить в листовку:
+  %h3 Заполните те поля, которые хотите включить в листовку:
   %br
   = form_for :person, url: '/flyer.pdf', html: { class: 'form-horizontal' } do |f|
     %input#if_download{type: "hidden", name: "download"}

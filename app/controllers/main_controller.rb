@@ -5,11 +5,8 @@ class MainController < ActionController::Base
     name: "Меня зовут",
     address: "Мой адрес",
     phone: "Мой телефон",
-    vkontakte: "Акаунт Вконтакте",
-    twitter: "Акаунт в Twitter",
-    odnoklassniki: "Акаунт в Одноклассниках",
-    facebook: "Акаунт в Facebook",
-    livejournal: "ЖЖ"
+    email: "Email адрес",
+    social: "Страница в соцсети"
   }
 
   def index

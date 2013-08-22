@@ -16,24 +16,12 @@
       .controls
         = f.text_field :phone
     .control-group
-      %label.control-label{for: "person_facebook"} Facebook
+      %label.control-label{for: "person_facebook"} Email
       .controls
-        = f.text_field :facebook
+        = f.text_field :email
     .control-group
-      %label.control-label{for: "person_vkontakte"} Вконтакте
+      %label.control-label{for: "person_social"} Страница в соцсети
       .controls
-        = f.text_field :vkontakte
-    .control-group
-      %label.control-label{for: "person_odnoklassniki"} Одноклассники
-      .controls
-        = f.text_field :odnoklassniki
-    .control-group
-      %label.control-label{for: "person_twitter"} Twitter
-      .controls
-        = f.text_field :twitter
-    .control-group
-      %label.control-label{for: "person_livejournal"} ЖЖ
-      .controls
-        = f.text_field :livejournal
+        = f.text_field :social
     .controls
       = f.submit "Получить листовку", class: 'btn btn-large btn-info'

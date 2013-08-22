@@ -10,17 +10,6 @@ config = {
   force_download: @if_download
 }
 
-data = {
-  name: "Меня зовут",
-  address: "Мой адрес",
-  phone: "Мой телефон",
-  vkontakte: "Акаунт Вконтакте",
-  twitter: "Акаунт в Twitter",
-  odnoklassniki: "Акаунт в Одноклассниках",
-  facebook: "Акаунт в Facebook",
-  livejournal: "ЖЖ"
-}
-
 prawn_document config do |pdf|
   
   pdf.font_families.update(

@@ -26,3 +26,10 @@
 input {
   @include transition-duration(0.3s);
 }
+
+#disclaimer {
+  padding: 20px 0px;
+  width: 792px;
+  margin: auto;
+  text-align: center;
+}
